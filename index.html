@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!*/
+    /* container that will be aligned to centre of page */
+    .outermost_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* inner container holding cards */
+    .inner_container{
+     
+      margin-top: 20px;
+      margin-bottom: 50px;
+      display: grid;
+      
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px ;
+      grid-auto-rows: 20px;
+      
+      height: 110vh;
+      
+     
+      
+    }
+
+    .inner_container > *{
+      background-color: #F0F1EC;
+    }
+
+    .one{
+      order:1;
+      background-color: #E72F24;
+      border-right: 9px solid black;
+      border-bottom:9px solid black; 
+      
+    }
+
+    .two{
+      order:2;
+      grid-column: span 3;
+      border-bottom:9px solid black; 
+      
+    }
+
+    .three{
+      order:3;
+      grid-row: span 2;
+      border-right: 9px solid black;
+      border-bottom:9px solid black; 
+    }
+
+    .four{
+      order:4;
+      grid-row: span 2;
+      grid-column: span 2;
+      border-bottom:9px solid black; 
+      border-right: 9px solid black;
+    }
+
+    .five{
+      order:5;
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+      
+    }
+
+    .six{
+      order:6;
+      grid-row: span 2;
+    }
+
+    .seven{
+      order:7;
+      border-right: 9px solid black;
+    }
+
+    .eight{
+      order:8;
+      background-color:#F9D01E ;
+      
+      
+    }
+
+    .nine{
+      order:9;
+      background-color: #232629;
+      border-right: 9px solid black;
+      border-left: 9px solid black;
+    }
+
+    
+
+    
+   
+    
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="outermost_container">
+    <div class="inner_container">
+      <div class="card_1 one"></div>
+      <div class="card_2 two"></div>
+      <div class="card_3 three"></div>
+      <div class="card_4 four"></div>
+      <div class="card_5 five"></div>
+      <div class="card_6 six"></div>
+      <div class="card_7 seven"></div>
+      <div class="card_8 eight"></div> 
+      <div class="card_9 nine"></div>
+     
+     
+      
+    
+     
+     
+      
+
+    </div>
+   
+
+  </div>
+  
+</body>
+
+</html>
